@@ -11,7 +11,12 @@ backend:
       folder: "posts"
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
       fields:
-        - { label: "layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+        - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layouts/post.njk",
+        }
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Description", name: "description", widget: "string" }
         - { label: "Date", name: "date", widget: "date", default: "" }
